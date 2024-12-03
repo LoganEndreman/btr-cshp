@@ -2,8 +2,6 @@ workflows:
   ios-workflow:
     name: iOS Workflow
     max_build_duration: 120
-    integrations:
-      app_store_connect: codemagic
     environment:
       flutter: stable
     scripts:
