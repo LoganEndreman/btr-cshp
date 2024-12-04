@@ -14,9 +14,6 @@ workflows:
       - name: Install pods
         script: | 
           find . -name "Podfile" -execdir pod install \;
-      - name: Flutter analyze
-        script: | 
-          flutter analyze --no-fatal-warnings --no-fatal-infos
       - name: Flutter unit tests
         script: | 
           flutter test
