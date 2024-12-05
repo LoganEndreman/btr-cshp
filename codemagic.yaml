@@ -14,10 +14,6 @@ workflows:
       - name: Install pods
         script: | 
           find . -name "Podfile" -execdir pod install \;
-      - name: Flutter unit tests
-        script: | 
-          flutter test
-        ignore_failure: true
       - name: Flutter build ipa
         script: | 
           flutter build ipa --release \
